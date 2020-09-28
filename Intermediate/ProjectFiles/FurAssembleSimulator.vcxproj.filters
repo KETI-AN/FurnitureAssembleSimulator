@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FurAssembleSimulator.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{13069DBB-0A54-4B05-A702-7EBA3CEEEFA3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FurAssembleSimulator.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FurAssembleSimulatorEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\ManipulatorRobot.png" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{006AAB77-085D-45CC-A89B-18BAACD29D43}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\Android">
+      <UniqueIdentifier>{EC179B42-67F6-478E-B9F7-D934BE13DB1A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Android\AndroidEngine.ini">
+      <Filter>Config\Android</Filter>
+    </None>
+    <Filter Include="Config\IOS">
+      <UniqueIdentifier>{BCF30426-7017-420C-9D02-0CEA96907A29}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\IOS\IOSEngine.ini">
+      <Filter>Config\IOS</Filter>
+    </None>
+    <Filter Include="Config\Linux">
+      <UniqueIdentifier>{E4800042-E48A-4040-A176-E9757C4207DB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Linux\LinuxEngine.ini">
+      <Filter>Config\Linux</Filter>
+    </None>
+    <Filter Include="Config\Mac">
+      <UniqueIdentifier>{34BE0A8E-28AF-4929-97C0-8E70CB8D5E82}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Mac\MacEngine.ini">
+      <Filter>Config\Mac</Filter>
+    </None>
+    <Filter Include="Config\PS4">
+      <UniqueIdentifier>{C807574D-5255-4A7C-BC8A-5426FEC157C8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\PS4\PS4Engine.ini">
+      <Filter>Config\PS4</Filter>
+    </None>
+    <Filter Include="Config\Switch">
+      <UniqueIdentifier>{0011DCF1-E5BA-45C7-9EE4-69236B46D389}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Switch\SwitchEngine.ini">
+      <Filter>Config\Switch</Filter>
+    </None>
+    <Filter Include="Config\Windows">
+      <UniqueIdentifier>{703F913E-8655-4434-946A-D0D3E32DDB10}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Windows\WindowsEngine.ini">
+      <Filter>Config\Windows</Filter>
+    </None>
+    <Filter Include="Config\XboxOne">
+      <UniqueIdentifier>{ED4BEF40-E33B-44CC-A106-E7F1D06B37AD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\XboxOne\XboxOneEngine.ini">
+      <Filter>Config\XboxOne</Filter>
+    </None>
+    <Filter Include="Source\FurAssembleSimulator">
+      <UniqueIdentifier>{8EEF3AFE-4140-498D-94E9-275976C77E0C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FurAssembleSimulator\FAssembleLibrary.cpp">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FurAssembleSimulator\FAssembleLibrary.h">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\FurAssembleSimulator\FurAssembleSimulator.Build.cs">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FurAssembleSimulator\FurAssembleSimulator.cpp">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FurAssembleSimulator\FurAssembleSimulator.h">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FurAssembleSimulator\FurnitureAssembleLibrary.cpp">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FurAssembleSimulator\FurnitureAssembleLibrary.h">
+      <Filter>Source\FurAssembleSimulator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
