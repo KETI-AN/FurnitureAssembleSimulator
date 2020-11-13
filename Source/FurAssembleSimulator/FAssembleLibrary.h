@@ -15,7 +15,7 @@ class FURASSEMBLESIMULATOR_API UFAssembleLibrary : public UBlueprintFunctionLibr
 	GENERATED_BODY()
 	
 	UFUNCTION(BlueprintCallable, Category = "Furniture_Assemble")
-		static TArray<FString> LoadPDDAfromCSV(const FString CSVfolderPath, const FString CSVfileName);
+		static TArray<FString> LoadPDDLfromCSV(const FString CSVfolderPath, const FString CSVfileName);
 
 	UFUNCTION(BlueprintCallable, Category = "Furniture_Assemble")
 		static TArray<AStaticMeshActor*> TransformPartActors(const TArray<FString> arrCSV);

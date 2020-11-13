@@ -4,12 +4,12 @@
 #include "FAssembleLibrary.h"
 
 
-TArray<FString> UFAssembleLibrary::LoadPDDAfromCSV(const FString CSVfolderPath, const FString CSVfileName)
+TArray<FString> UFAssembleLibrary::LoadPDDLfromCSV(const FString CSVfolderPath, const FString CSVfileName)
 {
 	FString CSVdirectory = CSVfolderPath;
 	FString FileName = CSVfileName;
-	FString strPDDA;
-	TArray<FString> arrPPDA;
+	FString strPDDL;
+	TArray<FString> arrPDDL;
 
 	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
 
@@ -17,24 +17,24 @@ TArray<FString> UFAssembleLibrary::LoadPDDAfromCSV(const FString CSVfolderPath, 
 	{
 		// Get absolute file path
 		FString CSVFilePath = CSVdirectory + "/" + FileName;
-		FFileHelper::LoadFileToString(strPDDA, *CSVFilePath);
-		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("Loading PDDA CSV File is complete."));
-		UE_LOG(LogClass, Warning, TEXT("[LoadPDDAfromCSV] Loading PDDA CSV File is complete."));
+		FFileHelper::LoadFileToString(strPDDL, *CSVFilePath);
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("Loading PDDL CSV File is complete."));
+		UE_LOG(LogClass, Warning, TEXT("[LoadPDDLfromCSV] Loading PDDL CSV File is complete."));
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("No PDDA CSV File in the CSVfolderPath."));
-		UE_LOG(LogClass, Warning, TEXT("[LoadPDDAfromCSV] No PDDA CSV File in the CSVfolderPath."));
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("No PDDL CSV File in the CSVfolderPath."));
+		UE_LOG(LogClass, Warning, TEXT("[LoadPDDLfromCSV] No PDDL CSV File in the CSVfolderPath."));
 	}
 
-	strPDDA.ParseIntoArrayLines(arrPPDA, true);
+	strPDDL.ParseIntoArrayLines(arrPDDL, true);
 
-	for (int32 i = 0; i < arrPPDA.Num(); i++)
+	for (int32 i = 0; i < arrPDDL.Num(); i++)
 	{
-		UE_LOG(LogClass, Warning, TEXT("PDDA Array Index: %d String: %s"), i, *arrPPDA[i]);
+		UE_LOG(LogClass, Warning, TEXT("PDDL Array Index: %d String: %s"), i, *arrPDDL[i]);
 	}
 
-	return arrPPDA;
+	return arrPDDL;
 }
 
 TArray<AStaticMeshActor*> UFAssembleLibrary::TransformPartActors(const TArray<FString> arrCSV)

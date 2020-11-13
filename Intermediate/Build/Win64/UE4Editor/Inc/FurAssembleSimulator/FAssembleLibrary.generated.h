@@ -35,13 +35,13 @@ class AStaticMeshActor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execLoadPDDAfromCSV) \
+	DECLARE_FUNCTION(execLoadPDDLfromCSV) \
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfolderPath); \
 		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfileName); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=UFAssembleLibrary::LoadPDDAfromCSV(Z_Param_CSVfolderPath,Z_Param_CSVfileName); \
+		*(TArray<FString>*)Z_Param__Result=UFAssembleLibrary::LoadPDDLfromCSV(Z_Param_CSVfolderPath,Z_Param_CSVfileName); \
 		P_NATIVE_END; \
 	}
 
@@ -66,13 +66,13 @@ class AStaticMeshActor;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execLoadPDDAfromCSV) \
+	DECLARE_FUNCTION(execLoadPDDLfromCSV) \
 	{ \
 		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfolderPath); \
 		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfileName); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=UFAssembleLibrary::LoadPDDAfromCSV(Z_Param_CSVfolderPath,Z_Param_CSVfileName); \
+		*(TArray<FString>*)Z_Param__Result=UFAssembleLibrary::LoadPDDLfromCSV(Z_Param_CSVfolderPath,Z_Param_CSVfileName); \
 		P_NATIVE_END; \
 	}
 
