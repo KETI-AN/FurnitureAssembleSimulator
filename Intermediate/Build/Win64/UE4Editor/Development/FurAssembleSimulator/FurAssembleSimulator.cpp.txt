@@ -1,2 +1,0 @@
-C:\Users\KETI-NEO\Documents\Unreal Projects\FurAssembleSimulator\Intermediate\Build\Win64\UE4Editor\Development\FurAssembleSimulator\Definitions.FurAssembleSimulator.h
-C:\Users\KETI-NEO\Documents\Unreal Projects\FurAssembleSimulator\Source\FurAssembleSimulator\FurAssembleSimulator.h
