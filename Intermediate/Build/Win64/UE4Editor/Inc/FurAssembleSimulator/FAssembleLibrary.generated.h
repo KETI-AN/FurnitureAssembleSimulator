@@ -15,7 +15,7 @@ class AStaticMeshActor;
 #endif
 #define FURASSEMBLESIMULATOR_FAssembleLibrary_generated_h
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetAssembledFTransform) \
 	{ \
@@ -46,7 +46,7 @@ class AStaticMeshActor;
 	}
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetAssembledFTransform) \
 	{ \
@@ -77,7 +77,7 @@ class AStaticMeshActor;
 	}
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS_NO_PURE_DECLS \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFAssembleLibrary(); \
 	friend struct Z_Construct_UClass_UFAssembleLibrary_Statics; \
@@ -86,7 +86,7 @@ public: \
 	DECLARE_SERIALIZER(UFAssembleLibrary)
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUFAssembleLibrary(); \
 	friend struct Z_Construct_UClass_UFAssembleLibrary_Statics; \
@@ -95,7 +95,7 @@ public: \
 	DECLARE_SERIALIZER(UFAssembleLibrary)
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_STANDARD_CONSTRUCTORS \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFAssembleLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFAssembleLibrary) \
@@ -108,7 +108,7 @@ private: \
 public:
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_ENHANCED_CONSTRUCTORS \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFAssembleLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -121,26 +121,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFAssembleLibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFAssembleLibrary)
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_12_PROLOG
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_GENERATED_BODY_LEGACY \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_12_PROLOG
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_STANDARD_CONSTRUCTORS \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_GENERATED_BODY \
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS_NO_PURE_DECLS \
-	FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h_15_ENHANCED_CONSTRUCTORS \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS_NO_PURE_DECLS \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -148,7 +148,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FURASSEMBLESIMULATOR_API UClass* StaticClass<class UFAssembleLibrary>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FurAssembleSimulator_Source_FurAssembleSimulator_FAssembleLibrary_h
+#define CURRENT_FILE_ID ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

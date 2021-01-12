@@ -1,2 +1,2 @@
-C:\Users\KETI-NEO\Documents\Unreal Projects\FurAssembleSimulator\Intermediate\Build\Win64\UE4Editor\Development\FurAssembleSimulator\Definitions.FurAssembleSimulator.h
-C:\Users\KETI-NEO\Documents\Unreal Projects\FurAssembleSimulator\Source\FurAssembleSimulator\FurAssembleSimulator.h
+C:\Users\NEO-HOME\Documents\gitlab\ue4-furniture-assmeble-sim\Intermediate\Build\Win64\UE4Editor\Development\FurAssembleSimulator\Definitions.FurAssembleSimulator.h
+C:\Users\NEO-HOME\Documents\gitlab\ue4-furniture-assmeble-sim\Source\FurAssembleSimulator\FurAssembleSimulator.h
