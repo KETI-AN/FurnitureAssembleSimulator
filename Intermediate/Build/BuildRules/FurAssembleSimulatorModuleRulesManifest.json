@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\KETI-NEO\\Documents\\gitlab\\ue4-furniture-assmeble-sim\\Source\\FurAssembleSimulator\\FurAssembleSimulator.Build.cs",
+		"C:\\Users\\KETI-NEO\\Documents\\gitlab\\ue4-furniture-assmeble-sim\\Source\\FurAssembleSimulator.Target.cs",
+		"C:\\Users\\KETI-NEO\\Documents\\gitlab\\ue4-furniture-assmeble-sim\\Source\\FurAssembleSimulatorEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.0"
+}

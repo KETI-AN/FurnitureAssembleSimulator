@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FurAssembleSimulator",
+			"Path": "C:\\Users\\KETI-NEO\\Documents\\gitlab\\ue4-furniture-assmeble-sim\\Source\\FurAssembleSimulator.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FurAssembleSimulatorEditor",
+			"Path": "C:\\Users\\KETI-NEO\\Documents\\gitlab\\ue4-furniture-assmeble-sim\\Source\\FurAssembleSimulatorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

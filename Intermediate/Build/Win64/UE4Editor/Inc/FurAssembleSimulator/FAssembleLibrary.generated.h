@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -15,66 +15,19 @@ class AStaticMeshActor;
 #endif
 #define FURASSEMBLESIMULATOR_FAssembleLibrary_generated_h
 
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_SPARSE_DATA
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetAssembledFTransform) \
-	{ \
-		P_GET_TARRAY(FString,Z_Param_arrCSV); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FTransform>*)Z_Param__Result=UFAssembleLibrary::GetAssembledFTransform(Z_Param_arrCSV); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTransformPartActors) \
-	{ \
-		P_GET_TARRAY(FString,Z_Param_arrCSV); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<AStaticMeshActor*>*)Z_Param__Result=UFAssembleLibrary::TransformPartActors(Z_Param_arrCSV); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execLoadPDDLfromCSV) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfolderPath); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfileName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=UFAssembleLibrary::LoadPDDLfromCSV(Z_Param_CSVfolderPath,Z_Param_CSVfileName); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetAssembledFTransform); \
+	DECLARE_FUNCTION(execTransformPartActors); \
+	DECLARE_FUNCTION(execLoadPDDLfromCSV);
 
 
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetAssembledFTransform) \
-	{ \
-		P_GET_TARRAY(FString,Z_Param_arrCSV); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FTransform>*)Z_Param__Result=UFAssembleLibrary::GetAssembledFTransform(Z_Param_arrCSV); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execTransformPartActors) \
-	{ \
-		P_GET_TARRAY(FString,Z_Param_arrCSV); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<AStaticMeshActor*>*)Z_Param__Result=UFAssembleLibrary::TransformPartActors(Z_Param_arrCSV); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execLoadPDDLfromCSV) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfolderPath); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_CSVfileName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=UFAssembleLibrary::LoadPDDLfromCSV(Z_Param_CSVfolderPath,Z_Param_CSVfileName); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetAssembledFTransform); \
+	DECLARE_FUNCTION(execTransformPartActors); \
+	DECLARE_FUNCTION(execLoadPDDLfromCSV);
 
 
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS_NO_PURE_DECLS \
@@ -127,6 +80,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFAssembleLibrary); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_SPARSE_DATA \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_STANDARD_CONSTRUCTORS \
@@ -138,6 +92,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_PRIVATE_PROPERTY_OFFSET \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_SPARSE_DATA \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_INCLASS_NO_PURE_DECLS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_ENHANCED_CONSTRUCTORS \

@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,34 +13,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FURASSEMBLESIMULATOR_FurnitureAssembleLibrary_generated_h
 
+#define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_SPARSE_DATA
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetAllFilesInDirectory) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_directory); \
-		P_GET_UBOOL(Z_Param_fullPath); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_onlyFilesStartingWith); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_onlyFilesEndingWith); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=UFurnitureAssembleLibrary::GetAllFilesInDirectory(Z_Param_directory,Z_Param_fullPath,Z_Param_onlyFilesStartingWith,Z_Param_onlyFilesEndingWith); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetAllFilesInDirectory);
 
 
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetAllFilesInDirectory) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_directory); \
-		P_GET_UBOOL(Z_Param_fullPath); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_onlyFilesStartingWith); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_onlyFilesEndingWith); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=UFurnitureAssembleLibrary::GetAllFilesInDirectory(Z_Param_directory,Z_Param_fullPath,Z_Param_onlyFilesStartingWith,Z_Param_onlyFilesEndingWith); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetAllFilesInDirectory);
 
 
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_INCLASS_NO_PURE_DECLS \
@@ -93,6 +74,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFurnitureAssembleLibrary); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_PRIVATE_PROPERTY_OFFSET \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_SPARSE_DATA \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_RPC_WRAPPERS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_INCLASS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_STANDARD_CONSTRUCTORS \
@@ -104,6 +86,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_PRIVATE_PROPERTY_OFFSET \
+	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_SPARSE_DATA \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_INCLASS_NO_PURE_DECLS \
 	ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FurnitureAssembleLibrary_h_18_ENHANCED_CONSTRUCTORS \
