@@ -36,6 +36,16 @@ void EmptyLinkFunctionForGeneratedCodeFAssembleLibrary() {}
 		*(TArray<AStaticMeshActor*>*)Z_Param__Result=UFAssembleLibrary::TransformPartActors(Z_Param_arrCSV);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UFAssembleLibrary::execCheckPDDLfiles)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_PDDLfolderPath);
+		P_GET_PROPERTY(FStrProperty,Z_Param_CSVfileName);
+		P_GET_PROPERTY(FStrProperty,Z_Param_PDDLfileName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UFAssembleLibrary::CheckPDDLfiles(Z_Param_PDDLfolderPath,Z_Param_CSVfileName,Z_Param_PDDLfileName);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UFAssembleLibrary::execLoadPDDLfromCSV)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_CSVfolderPath);
@@ -49,11 +59,86 @@ void EmptyLinkFunctionForGeneratedCodeFAssembleLibrary() {}
 	{
 		UClass* Class = UFAssembleLibrary::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CheckPDDLfiles", &UFAssembleLibrary::execCheckPDDLfiles },
 			{ "GetAssembledFTransform", &UFAssembleLibrary::execGetAssembledFTransform },
 			{ "LoadPDDLfromCSV", &UFAssembleLibrary::execLoadPDDLfromCSV },
 			{ "TransformPartActors", &UFAssembleLibrary::execTransformPartActors },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics
+	{
+		struct FAssembleLibrary_eventCheckPDDLfiles_Parms
+		{
+			FString PDDLfolderPath;
+			FString CSVfileName;
+			FString PDDLfileName;
+			bool ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PDDLfolderPath_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_PDDLfolderPath;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CSVfileName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_CSVfileName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PDDLfileName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_PDDLfileName;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfolderPath_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfolderPath = { "PDDLfolderPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAssembleLibrary_eventCheckPDDLfiles_Parms, PDDLfolderPath), METADATA_PARAMS(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfolderPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfolderPath_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_CSVfileName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_CSVfileName = { "CSVfileName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAssembleLibrary_eventCheckPDDLfiles_Parms, CSVfileName), METADATA_PARAMS(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_CSVfileName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_CSVfileName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfileName_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfileName = { "PDDLfileName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAssembleLibrary_eventCheckPDDLfiles_Parms, PDDLfileName), METADATA_PARAMS(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfileName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfileName_MetaData)) };
+	void Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FAssembleLibrary_eventCheckPDDLfiles_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FAssembleLibrary_eventCheckPDDLfiles_Parms), &Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfolderPath,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_CSVfileName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_PDDLfileName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Furniture_Assemble" },
+		{ "ModuleRelativePath", "FAssembleLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFAssembleLibrary, nullptr, "CheckPDDLfiles", nullptr, nullptr, sizeof(FAssembleLibrary_eventCheckPDDLfiles_Parms), Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UFAssembleLibrary_GetAssembledFTransform_Statics
 	{
@@ -236,6 +321,7 @@ void EmptyLinkFunctionForGeneratedCodeFAssembleLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FurAssembleSimulator,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFAssembleLibrary_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UFAssembleLibrary_CheckPDDLfiles, "CheckPDDLfiles" }, // 4281302231
 		{ &Z_Construct_UFunction_UFAssembleLibrary_GetAssembledFTransform, "GetAssembledFTransform" }, // 1602231840
 		{ &Z_Construct_UFunction_UFAssembleLibrary_LoadPDDLfromCSV, "LoadPDDLfromCSV" }, // 183552077
 		{ &Z_Construct_UFunction_UFAssembleLibrary_TransformPartActors, "TransformPartActors" }, // 4101407316
@@ -274,7 +360,7 @@ void EmptyLinkFunctionForGeneratedCodeFAssembleLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFAssembleLibrary, 2706468691);
+	IMPLEMENT_CLASS(UFAssembleLibrary, 1510698559);
 	template<> FURASSEMBLESIMULATOR_API UClass* StaticClass<UFAssembleLibrary>()
 	{
 		return UFAssembleLibrary::StaticClass();

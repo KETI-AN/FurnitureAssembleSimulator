@@ -20,6 +20,7 @@ class AStaticMeshActor;
  \
 	DECLARE_FUNCTION(execGetAssembledFTransform); \
 	DECLARE_FUNCTION(execTransformPartActors); \
+	DECLARE_FUNCTION(execCheckPDDLfiles); \
 	DECLARE_FUNCTION(execLoadPDDLfromCSV);
 
 
@@ -27,6 +28,7 @@ class AStaticMeshActor;
  \
 	DECLARE_FUNCTION(execGetAssembledFTransform); \
 	DECLARE_FUNCTION(execTransformPartActors); \
+	DECLARE_FUNCTION(execCheckPDDLfiles); \
 	DECLARE_FUNCTION(execLoadPDDLfromCSV);
 
 

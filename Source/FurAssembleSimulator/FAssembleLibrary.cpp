@@ -2,6 +2,8 @@
 
 
 #include "FAssembleLibrary.h"
+#include <fstream>
+#include <iostream>
 
 
 TArray<FString> UFAssembleLibrary::LoadPDDLfromCSV(const FString CSVfolderPath, const FString CSVfileName)
@@ -35,6 +37,56 @@ TArray<FString> UFAssembleLibrary::LoadPDDLfromCSV(const FString CSVfolderPath, 
 	}
 
 	return arrPDDL;
+}
+
+bool UFAssembleLibrary::CheckPDDLfiles(const FString PDDLfolderPath, const FString CSVfileName, const FString PDDLfileName)
+{
+	FString PDDLdirectory = PDDLfolderPath;
+	FString CSV_FName = PDDLdirectory + "/" + CSVfileName;
+	FString PDDL_FName = PDDLdirectory + "/" + PDDLfileName;
+	bool isHaveFiles = false;
+	
+
+	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
+
+	if (PlatformFile.CreateDirectoryTree(*PDDLdirectory))
+	{
+		std::string strCSVfile(TCHAR_TO_UTF8(*CSV_FName));
+		std::string strPDDLfile(TCHAR_TO_UTF8(*PDDL_FName));
+		std::ifstream fCSV, fPDDL;
+		fCSV.open(strCSVfile);
+		fPDDL.open(strPDDLfile);
+
+		// Check whether CSV and PDDL files is existed or not.
+		if (!fCSV.fail() && !fPDDL.fail())
+		{
+			fCSV.close();
+			fPDDL.close();
+			isHaveFiles = true;
+
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("CSV and PDDL Files are ready for Assemble Start."));
+			UE_LOG(LogClass, Warning, TEXT("[CheckPDDLfiles] Checking PDDL Files is complete."));
+
+			return isHaveFiles;
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("CSV and PDDL Files are not ready for Assemble Start."));
+			UE_LOG(LogClass, Warning, TEXT("[CheckPDDLfiles] CSV and PDDL Files are not ready. waiting the files again..."));
+
+			isHaveFiles = false;
+			return isHaveFiles;
+		}
+				
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("There is No PDDL Folder. Please Check connecting network drive and folder. "));
+		UE_LOG(LogClass, Warning, TEXT("[CheckPDDLfiles] No PDDL Folder."));
+		
+		return isHaveFiles;
+	}
+	
 }
 
 TArray<AStaticMeshActor*> UFAssembleLibrary::TransformPartActors(const TArray<FString> arrCSV)
