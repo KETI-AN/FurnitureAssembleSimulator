@@ -8,8 +8,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FTransform;
-class AStaticMeshActor;
 #ifdef FURASSEMBLESIMULATOR_FAssembleLibrary_generated_h
 #error "FAssembleLibrary.generated.h already included, missing '#pragma once' in FAssembleLibrary.h"
 #endif
@@ -18,16 +16,12 @@ class AStaticMeshActor;
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_SPARSE_DATA
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetAssembledFTransform); \
-	DECLARE_FUNCTION(execTransformPartActors); \
 	DECLARE_FUNCTION(execCheckPDDLfiles); \
 	DECLARE_FUNCTION(execLoadPDDLfromCSV);
 
 
 #define ue4_furniture_assmeble_sim_Source_FurAssembleSimulator_FAssembleLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetAssembledFTransform); \
-	DECLARE_FUNCTION(execTransformPartActors); \
 	DECLARE_FUNCTION(execCheckPDDLfiles); \
 	DECLARE_FUNCTION(execLoadPDDLfromCSV);
 

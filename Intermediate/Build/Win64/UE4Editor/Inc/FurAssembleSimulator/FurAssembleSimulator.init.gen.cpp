@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFurAssembleSimulator_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xE38556B8,
+				0xF2FBD15B,
 				0xFC622A7D,
 				METADATA_PARAMS(nullptr, 0)
 			};

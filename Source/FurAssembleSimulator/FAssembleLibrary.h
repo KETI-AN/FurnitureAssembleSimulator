@@ -20,9 +20,5 @@ class FURASSEMBLESIMULATOR_API UFAssembleLibrary : public UBlueprintFunctionLibr
 	UFUNCTION(BlueprintCallable, Category = "Furniture_Assemble")
 		static bool CheckPDDLfiles(const FString PDDLfolderPath, const FString CSVfileName, const FString PDDLfileName);
 
-	UFUNCTION(BlueprintCallable, Category = "Furniture_Assemble")
-		static TArray<AStaticMeshActor*> TransformPartActors(const TArray<FString> arrCSV);
-
-	UFUNCTION(BlueprintCallable, Category = "Furniture_Assemble")
-		static TArray<FTransform> GetAssembledFTransform(const TArray<FString> arrCSV);
+	
 };
