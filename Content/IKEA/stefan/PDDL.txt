@@ -1,0 +1,32 @@
+place frame_left frame_left_pose2
+woodenpin frame_left woodenpin_pose1 frame_left_Wh3
+woodenpin frame_left woodenpin_pose1 frame_left_Wh4
+woodenpin frame_left woodenpin_pose1 frame_left_Wh5
+woodenpin frame_left woodenpin_pose1 frame_left_Wh6
+woodenpin frame_left woodenpin_pose1 frame_left_Wh7
+woodenpin frame_left woodenpin_pose1 frame_left_Wh2
+woodenpin frame_left woodenpin_pose1 frame_left_Wh1
+place frame_long frame_long_pose1
+bracket frame_long bracket_pose1 frame_long_Bh2
+bracket frame_long bracket_pose1 frame_long_Bh1
+assembly frame_long frame_long_pose7 frame_left frame_left_Sh1
+place frame_short frame_short_pose1
+bracket frame_short bracket_pose1 frame_short_Bh2
+bracket frame_short bracket_pose1 frame_short_Bh1
+assembly frame_short frame_short_pose9 frame_left frame_left_Sh3
+assembly frame_back frame_back_pose2 frame_left frame_left_Sh2
+woodenpin frame_back woodenpin_pose1 frame_back_Wh4
+woodenpin frame_back woodenpin_pose1 frame_back_Wh5
+woodenpin frame_back woodenpin_pose1 frame_back_Wh6
+woodenpin frame_short woodenpin_pose1 frame_short_Wh2
+woodenpin frame_short woodenpin_pose1 frame_short_Wh1
+woodenpin frame_long woodenpin_pose1 frame_long_Wh3
+woodenpin frame_long woodenpin_pose1 frame_long_Wh4
+assembly frame_right frame_right_pose6 frame_long frame_long_Sh2
+longscrew frame_right longscrew_pose1 frame_right_Sh5
+longscrew frame_right longscrew_pose1 frame_right_Sh4
+longscrew frame_right longscrew_pose1 frame_right_Sh6
+longscrew frame_left longscrew_pose1 frame_left_Sh6
+longscrew frame_left longscrew_pose1 frame_left_Sh4
+longscrew frame_left longscrew_pose1 frame_left_Sh5
+place frame_seat frame_seat_pose1
